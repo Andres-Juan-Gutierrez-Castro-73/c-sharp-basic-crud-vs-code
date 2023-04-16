@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\c-sharp-mvc-crud-basic.props" />
+</Project>

@@ -1,0 +1,23 @@
+@model Usuario
+<h2>Eliminar usuario Usuario</h2>
+
+<form action="Eliminar" method="post">
+    <div>
+        <label asp-for="Id_Usuario">Id_Usuario</label>
+        <input asp-for="Id_Usuario" readonly>
+    </div>
+    <div>
+        <label asp-for="Nombre">Nombre</label>
+        <input asp-for="Nombre">
+        <span asp-validation-for="Nombre" readonly class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Edad">Edad</label>
+        <input asp-for="Edad">
+        <span asp-validation-for="Edad" readonly class="text-danger"></span>
+    </div>
+    <div>
+        <input type="submit" value="Eliminar" class="btn btn-warning">
+        <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+    </div>
+</form>

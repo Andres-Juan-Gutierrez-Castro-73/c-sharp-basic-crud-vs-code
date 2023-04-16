@@ -1,0 +1,19 @@
+@model Usuario
+<h2>Crear Usuario</h2>
+
+<form action="Crear" method="post">
+    <div>
+        <label asp-for="Nombre">Nombre</label>
+        <input asp-for="Nombre">
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Edad">Edad</label>
+        <input asp-for="Edad">
+        <span asp-validation-for="Edad" class="text-danger"></span>
+    </div>
+    <div>
+        <input type="submit" value="Crear" class="btn btn-success">
+        <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+    </div>
+</form>
